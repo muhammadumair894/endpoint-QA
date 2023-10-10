@@ -1,3 +1,4 @@
+torch==2.0.1+cu118
 transformers==4.34.0
 accelerate==0.23.0
 einops==0.7.0
