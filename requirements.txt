@@ -9,5 +9,5 @@ langchain==0.0.311
 xformers==0.0.22
 bitsandbytes==0.41.1
 faiss-gpu==1.7.2 
-sentence_transformers=2.2.2
+sentence_transformers==2.2.2
 pypdf==3.16.3
