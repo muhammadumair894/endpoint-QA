@@ -1,7 +1,7 @@
 fastapi==0.74.*
 requests==2.27.*
 uvicorn[standard]==0.17.*
-torch==1.11.*
+#torch==1.11.*
 transformers==4.34.0
 accelerate==0.23.0
 einops==0.7.0
