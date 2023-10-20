@@ -1,7 +1,6 @@
 fastapi==0.74.*
 requests==2.27.*
 uvicorn[standard]==0.17.*
-#torch==1.11.*
 transformers==4.34.0
 accelerate==0.23.0
 einops==0.7.0
@@ -11,3 +10,5 @@ bitsandbytes==0.41.1
 faiss-gpu==1.7.2 
 sentence_transformers==2.2.2
 pypdf==3.16.3
+pyngrok
+nest_asyncio
