@@ -5,7 +5,7 @@ uvicorn[standard]==0.17.*
 transformers==4.34.0
 accelerate==0.23.0
 einops==0.7.0
-langchain==0.0.311
+langchain
 xformers==0.0.22
 bitsandbytes==0.41.1
 faiss-gpu==1.7.2 
