@@ -104,7 +104,7 @@ This app shows how to do Document Question Answering
 Check out the docs for the `/predict` endpoint below to try it out!
 """
 app = FastAPI(docs_url="/", description=description)
-@app.post("/predict")
+@app.post("/extractFields")
 async def load_file(file_url: str, sentences: List[str]):
 
     loader = PyPDFLoader(file_url)
