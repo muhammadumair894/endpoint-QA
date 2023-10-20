@@ -101,7 +101,7 @@ embeddings = HuggingFaceEmbeddings(model_name=model_name, model_kwargs=model_kwa
 description = """
 ## Medical Document QA
 This app shows how to do Document Question Answering
-Check out the docs for the `/predict` endpoint below to try it out!
+Check out the docs for the endpoint below to try it out!
 """
 app = FastAPI(docs_url="/", description=description)
 @app.post("/extractFields")
