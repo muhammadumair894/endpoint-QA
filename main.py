@@ -43,7 +43,7 @@ model = transformers.AutoModelForCausalLM.from_pretrained(
     model_id,
     trust_remote_code=True,
     config=model_config,
-    #quantization_config=bnb_config,
+    quantization_config=bnb_config,
     device_map='auto',
     use_auth_token=hf_auth
 )
