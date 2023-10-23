@@ -84,7 +84,7 @@ generate_text = transformers.pipeline(
     tokenizer=tokenizer,
     return_full_text=True,  # langchain expects the full text
     task='text-generation',
-    # we pass model parameters here too
+    # We pass model parameters here too
     stopping_criteria=stopping_criteria,  # without this model rambles during chat
     temperature=0.1,  # 'randomness' of outputs, 0.0 is the min and 1.0 the max
     max_new_tokens=32,  # max number of tokens to generate in the output 512
@@ -110,12 +110,12 @@ async def load_file(file_url: str, sentences: List[str]):
     loader = PyPDFLoader(file_url)
     pages = loader.load_and_split()
     #pages[0]
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=4000, chunk_overlap=20)
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=400, chunk_overlap=20)
     all_splits = text_splitter.split_documents(pages)
     # storing embeddings in the vector store
     vectorstore = FAISS.from_documents(all_splits, embeddings)
 
-    chain = ConversationalRetrievalChain.from_llm(llm, vectorstore.as_retriever(), return_source_documents=True)
+    chain = ConversationalRetrievalChain.from_llm(llm, vectorstore.as_retriever(), return_source_documents=False)
 
     chat_history = []
     qa_dict = {}
