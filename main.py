@@ -105,7 +105,7 @@ Check out the docs for the endpoint below to try it out!
 """
 app = FastAPI(docs_url="/", description=description)
 @app.post("/extractFields")
-async def load_file(file_url: str, sentences: List[str]):
+def load_file(file_url: str, sentences: List[str]):
     
     print("Loading PDF")
     loader = PyPDFLoader(file_url)
