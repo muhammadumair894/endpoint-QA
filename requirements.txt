@@ -1,5 +1,5 @@
 fastapi==0.74.*
-requests==2.27.*
+requests==2.31.*
 uvicorn[standard]==0.17.*
 transformers==4.34.0
 accelerate==0.23.0
@@ -9,6 +9,6 @@ xformers==0.0.22
 bitsandbytes==0.41.1
 faiss-gpu==1.7.2 
 sentence_transformers==2.2.2
-pypdf==3.16.3
+pypdf==3.17
 pyngrok
 nest_asyncio
